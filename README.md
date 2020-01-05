@@ -5,7 +5,7 @@ Application for Campus Department Management
 
 ## Clone the Repo using Clone Btn
 
-## npm install
+## Make sure you using node version v10.16.3 or greater for live-server cause i develop application using node v10.16.3
 
 ## npm install -g live-server
 
