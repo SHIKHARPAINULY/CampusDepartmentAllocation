@@ -1,35 +1,13 @@
+<header-comp></header-comp>
+
 <div class="row" ng-controller="mainCtrl" >
-    <md-toolbar md-scroll-shrink ng-if="true" >
-        <div class="md-toolbar-tools">
-          <h3>
-            <span><a ui-sref="home">Home </a> </span>
-          </h3>
-          <span flex></span>
-          <h2>Welcome to College Campus Management !!!</h2>
-          <span flex></span>
-        </div>
-    </md-toolbar>
-  
     <div>
       <md-content layout-padding>
         <form name="userForm">
-          <div ng-repeat="student in students">
-          <div layout-gt-sm="row">
-                <md-input-container class="md-block" flex-gt-sm="40">
-                  <label>Student Name</label>
-                  <input ng-model="student" style="font-weight: 900; color: black;" disabled>
-                </md-input-container>
-              <md-input-container class="md-block" flex-gt-sm= "40">
-                <label>Department</label>
-                <md-select ng-model="deptt">
-                  <md-option ng-repeat="deptt in department" value="{{deptt}}" ng-click="allocate($event)">
-                    {{deptt}}
-                  </md-option>
-                </md-select>
-              </md-input-container>
-        </div>
-      </div>
+          <div>
+              <student-list ></student-list>
+          </div>
         </form>
-    </md-content>
+      </md-content>
     </div >
 </div>

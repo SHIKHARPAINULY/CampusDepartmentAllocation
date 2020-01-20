@@ -1,0 +1,10 @@
+<div>
+    <md-input-container >
+        <label>Department</label>
+        <md-select ng-model="deptt"  style="font-weight: 900; color: black;">
+            <md-option ng-repeat="deptt in department" value="{{deptt}}" ng-click="allocate($event)">
+            {{deptt}}
+            </md-option>
+        </md-select>
+    </md-input-container>
+</div>

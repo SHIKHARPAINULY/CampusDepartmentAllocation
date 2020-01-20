@@ -5,9 +5,6 @@ app.controller('mainCtrl' , function($scope, $mdDialog) {
   // Data related to the students & the departments in college
   $scope.ShowStudent = 'false';
   $scope.ShowDepartment = 'false';
-  $scope.department = [ 'MECHANICAL', 'COMPUTER' , 'ELECTRICAL', 'CIVIL' , 'PHYSICS', 'CHEMISTRY','MATHEMATICS', 'BIOLOGY' , 'ELECTRONICS', 'GEOLOGY' , 'GEOGRAPHY', 'ECONOMICS' ];
-  $scope.students = [ 'Jonathan', 'Nathan', 'Chris', 'Brian', 'Timothy', 'Brandy' , 'Aaron', 'Jack' , 'Kate' , 'Deshmond' , 'Hurlley' , 'Charlie' , 'Walt', 'Tony' ];
-  $scope.allocatedDepartmentList = [];
     // Dialog Modal 
     $scope.showDeaprtment = function(ev) {
       $scope.ShowStudent = 'false';
