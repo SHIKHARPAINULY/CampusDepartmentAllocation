@@ -3,7 +3,7 @@
 angular.module('firstAngularApp').directive('studentList', function(){
     return { 
         restrict:'E',
-        templateUrl:'views/1.6/student-list/student-list.html',
+        templateUrl:'views/components/student-list/student-list.html',
         scope : {
             selectdeptt: '<'
         },

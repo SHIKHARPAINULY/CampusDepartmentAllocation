@@ -16,7 +16,7 @@ app.config(function($stateProvider, $urlRouterProvider){
     templateUrl:'views/home.html'
   }).state('depart' , {
     url:'/depart',
-    templateUrl:'views/1.6/mainView.html'
+    templateUrl:'views/components/mainView.html'
   })
 
   allocateDepartment =  function ($scope){
