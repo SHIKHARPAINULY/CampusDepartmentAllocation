@@ -11,7 +11,7 @@ angular.module('firstAngularApp').directive('listComp', function(){
             fun:'&'
         },
         link: function(scope, elem , attrs  ) {
-            // console.log(' list name :', scope.name);
+            console.log(' list name :', scope.name);
         } 
     }
 });

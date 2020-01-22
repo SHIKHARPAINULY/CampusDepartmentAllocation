@@ -1,7 +1,10 @@
-<div  layout-gt-sm="row" ng-repeat="depat in department">
-    <md-input-container class="md-block" flex-gt-sm= "60">
-        <label>department Name</label>
-        <input ng-model="depat" style="font-weight: 900; color: black;" disabled>
-    </md-input-container>
-    <student-list user="depat"></student-list>
+<div id="columnCentre">
+    <div  layout-gt-sm="row" ng-repeat="depat in department">
+        <md-input-container class="md-block" flex-gt-sm= "60">
+            <label>department Name</label>
+            <input ng-model="depat" style="font-weight: 900; color: black;" disabled>
+        </md-input-container>
+        <button value={{depat}} class="form-control btn-primary mt-4" flex-gt-sm= "40" ng-click="aler($event)" >Show student list</button>
+        <student-list ng-if="SelectedDepartment.length > 0" selectdeptt="'SelectedDepartment'"></student-list>
+    </div>
 </div>
