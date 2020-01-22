@@ -5,8 +5,8 @@ app.controller('mainCtrl' , function($scope, $mdDialog) {
   // Data related to the students & the departments in college
   $scope.ShowStudent = 'false';
   $scope.ShowDepartment = 'false';
-  $scope.department = [ 'MECHANICAL', 'COMPUTER' , 'ELECTRICAL', 'CIVIL' , 'PHYSICS', 'CHEMISTRY','MATHEMATICS', 'BIOLOGY' , 'ELECTRONICS', 'GEOLOGY' , 'GEOGRAPHY', 'ECONOMICS' ]
-  $scope.students = [ 'Jonathan', 'Nathan', 'Chris', 'Brian', 'Timothy', 'Brandy' , 'Aaron', 'Jack' , 'Kate' , 'Deshmond' , 'Hurlley' , 'Charlie' , 'Walt', 'Tony' ];
+  $scope.department = [ 'MECHANICAL', 'COMPUTER' , 'ELECTRICAL', 'CIVIL'  ,'ELECTRONICS' ]
+  $scope.students = [ 'Brandy' , 'Aaron', 'Jack' , 'Kate' , 'Deshmond' , 'Hurlley' , 'Charlie' , 'Walt', 'Tony' ];
 
     // Dialog Modal 
     $scope.showDeaprtment = function(ev) {
@@ -14,7 +14,7 @@ app.controller('mainCtrl' , function($scope, $mdDialog) {
       $scope.ShowDepartment = 'true';
         $mdDialog.show({
           controller: DialogController,
-          templateUrl: 'views/popUpModals/depttModal.html' ,
+          templateUrl: 'views/ng-popUp/depttModal.html' ,
           parent: angular.element(document.body),
           targetEvent: ev,
           clickOutsideToClose:false,
@@ -26,7 +26,7 @@ app.controller('mainCtrl' , function($scope, $mdDialog) {
         $scope.ShowDepartment = 'false';
         $mdDialog.show({
           controller: DialogController,
-          templateUrl: 'views/popUpModals/studentModal.html' ,
+          templateUrl: 'views/ng-popUp/studentModal.html' ,
           parent: angular.element(document.body),
           targetEvent: ev,
           clickOutsideToClose:false,
@@ -51,7 +51,7 @@ app.config(function($stateProvider, $urlRouterProvider){
     templateUrl:'views/home.html'
   }).state('depart' , {
     url:'/depart',
-    templateUrl:'views/department/studentdepartment.html'
+    templateUrl:'views/1.6/mainView.html'
   })
 
   allocateDepartment =  function ($scope){

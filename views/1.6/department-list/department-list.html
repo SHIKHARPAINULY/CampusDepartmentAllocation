@@ -1,0 +1,7 @@
+<div  layout-gt-sm="row" ng-repeat="depat in department">
+    <md-input-container class="md-block" flex-gt-sm= "60">
+        <label>department Name</label>
+        <input ng-model="depat" style="font-weight: 900; color: black;" disabled>
+    </md-input-container>
+    <student-list user="depat"></student-list>
+</div>
